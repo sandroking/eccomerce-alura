@@ -1,0 +1,53 @@
+/* PALETA DE COLORES */
+
+:root {
+    --azul: #2A7AE4;
+    --gris: #464646;
+    --gris-claro:#F5F5F5;
+    --white: #FFFFFF;
+    --azul-10: #EAF2FD;
+    --gris-masclaro: #A2A2A2
+}
+
+/* ANCHO DE LA PAGINA */
+
+.contenedor {
+    max-width: 1136px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Animacion de btn */
+
+.btn_animate {
+    position: relative;
+    transition: color 0.5s;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+
+.btn_animate::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+    transition: bottom 0.5s;
+}
+
+.btn_animate:hover::before {
+    bottom: -10px;
+}
+
+
+

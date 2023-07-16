@@ -1,0 +1,29 @@
+.prod__img-contenedor {
+    width: 100%;
+    position: relative;
+}
+
+.admin__comand {
+    position: absolute;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    top: 0.6em;
+    right: 0.6em;
+}
+
+.delete, 
+.edit {
+    cursor: pointer;
+    fill: var(--white);
+    transition: 0.3s;
+}
+
+.delete:hover {
+    fill: rgb(238, 94, 94);
+}
+
+.edit:hover {
+    fill: rgb(38, 131, 253);
+}
